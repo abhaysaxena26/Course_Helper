@@ -21,7 +21,7 @@ const Page = () => {
     const token = localStorage.getItem("token") || "";
     const fetchCourses = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/courses",{ headers: { Authorization: `Bearer ${token}`}});
+        const response = await axios.get("https://course-helper-fb5w.vercel.app/courses",{ headers: { Authorization: `Bearer ${token}`}});
         console.log(response.data);
         setCourses(response.data);
       } catch (error) {

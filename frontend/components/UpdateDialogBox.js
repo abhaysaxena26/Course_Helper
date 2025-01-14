@@ -26,7 +26,7 @@ const UpdateDialogBox = ({ open, course, onClose, onUpdate }) => {
       try {
           const token = localStorage.getItem("token");
           console.log("Deleting course:", course);
-          await axios.delete(`http://localhost:5000/courses/${course.code}`, {
+          await axios.delete(`https://course-helper-fb5w.vercel.app/courses/${course.code}`, {
               headers: { Authorization: `Bearer ${token}` },
           });
           alert("Course deleted successfully");
@@ -40,7 +40,7 @@ const UpdateDialogBox = ({ open, course, onClose, onUpdate }) => {
     const handleSubmit = async () => {
       try {
         const token = localStorage.getItem("token");
-        const response = await axios.put(`http://localhost:5000/courses/${course.code}`,courseDetails,{ headers: { Authorization: `Bearer ${token}` } });
+        const response = await axios.put(`https://course-helper-fb5w.vercel.app/${course.code}`,courseDetails,{ headers: { Authorization: `Bearer ${token}` } });
         alert("Course updated successfully");
         if (onUpdate) onUpdate(course.id, response.data); // Update parent state
         location.reload();

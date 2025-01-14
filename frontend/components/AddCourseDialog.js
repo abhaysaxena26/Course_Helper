@@ -23,7 +23,7 @@ const AddCourseDialog = ({open,onClose,onAddCourse}) => {
         console.log("Token:",token);
         console.log("Course Details:",newCourse);
 
-        const response = await axios.post("http://localhost:5000/courses",newCourse,{ headers: { Authorization: `Bearer ${token}`}});
+        const response = await axios.post("https://course-helper-fb5w.vercel.app/courses",newCourse,{ headers: { Authorization: `Bearer ${token}`}});
         alert("Course added successfully");
         location.reload();
         console.log("Course added:",response.data);

@@ -11,7 +11,7 @@ const page = () => {
 
   const login = async () => {
     console.log(email,password);
-    const response = await axios.post("http://localhost:5000/auth/login",{email:email,password:password});
+    const response = await axios.post("https://course-helper-fb5w.vercel.app/auth/login",{email:email,password:password});
     console.log(response.data);
     localStorage.setItem("token",response.data.token);
     router.push("/");
