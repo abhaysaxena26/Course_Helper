@@ -1,13 +1,18 @@
-"Course Helper" is a website designed to assist users in managing their courses efficiently. With this application, you can:
+📚 Course Helper
+Course Helper is a web application designed to help users manage their academic courses efficiently and effortlessly.
 
---Add any course you want.
---Delete courses no longer needed.
---View detailed information about any course.
---Update course details as required.
+✨ Features:
+➕ Add Courses — Easily add any course you want to keep track of.
+🗑️ Delete Courses — Remove courses that are no longer needed.
+🔍 View Course Details — Get comprehensive information about each course.
+✏️ Update Courses — Modify course details as needed.
 
-Technologies Used
---Frontend: Built using Next.js for a seamless and dynamic user experience.
---Backend: Powered by Express.js for robust and scalable server-side operations.
---Database: Utilizes PostgreSQL to securely store and manage data.
+🛠️ Tech Stack:
+Frontend: Next.js — Delivers a fast, seamless, and interactive user experience.
+Backend: Express.js — Handles server-side logic with scalability and performance in mind.
+Database: PostgreSQL — A powerful relational database for secure and structured data storage.
 
-This application is user-friendly and offers a streamlined way to manage your courses with ease.
+✅ Highlights:
+Clean and user-friendly interface
+Fully functional CRUD operations for course management
+Modular architecture for easy maintenance and scalability
